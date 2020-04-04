@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0742ce624092a441a2da695ffa3e0099",
+    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -102,118 +102,6 @@
                 "math"
             ],
             "time": "2020-02-17T13:57:43+00:00"
-        },
-        {
-            "name": "directorytree/ldaprecord",
-            "version": "v1.2.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DirectoryTree/LdapRecord.git",
-                "reference": "2954b88372e60199f90fc0765c9d0d1a06be9bcd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DirectoryTree/LdapRecord/zipball/2954b88372e60199f90fc0765c9d0d1a06be9bcd",
-                "reference": "2954b88372e60199f90fc0765c9d0d1a06be9bcd",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-ldap": "*",
-                "illuminate/contracts": "^5.0|^6.0|^7.0",
-                "nesbot/carbon": "^1.0|^2.0",
-                "php": ">=7.2",
-                "psr/log": "^1.0",
-                "psr/simple-cache": "^1.0",
-                "tightenco/collect": "^5.0|^6.0|^7.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "LdapRecord\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Bauman",
-                    "email": "steven_bauman@outlook.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A fully-featured LDAP ORM.",
-            "homepage": "https://www.ldaprecord.com",
-            "keywords": [
-                "active directory",
-                "ad",
-                "adLDAP",
-                "adldap2",
-                "directory",
-                "ldap",
-                "ldaprecord",
-                "orm",
-                "windows"
-            ],
-            "time": "2020-04-03T14:02:40+00:00"
-        },
-        {
-            "name": "directorytree/ldaprecord-laravel",
-            "version": "v1.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DirectoryTree/LdapRecord-Laravel.git",
-                "reference": "1a2f333e9ee600828ac5f36c0e2a0e8c848456d1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DirectoryTree/LdapRecord-Laravel/zipball/1a2f333e9ee600828ac5f36c0e2a0e8c848456d1",
-                "reference": "1a2f333e9ee600828ac5f36c0e2a0e8c848456d1",
-                "shasum": ""
-            },
-            "require": {
-                "directorytree/ldaprecord": "^1.0",
-                "ext-ldap": "*",
-                "illuminate/support": "^5.6|^6.0|^7.0",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "~1.0",
-                "orchestra/testbench": "~3.7",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "project",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "LdapRecord\\Laravel\\LdapServiceProvider",
-                        "LdapRecord\\Laravel\\LdapAuthServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LdapRecord\\Laravel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "LDAP Authentication & Management for Laravel.",
-            "keywords": [
-                "adldap2",
-                "laravel",
-                "ldap",
-                "ldaprecord"
-            ],
-            "time": "2020-03-24T01:22:07+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1048,66 +936,6 @@
             "time": "2020-03-31T15:01:12+00:00"
         },
         {
-            "name": "laravel/sanctum",
-            "version": "v2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/sanctum.git",
-                "reference": "f3d45b92d4187ea5eb37f82c1a0dce23c9b0b17a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/f3d45b92d4187ea5eb37f82c1a0dce23c9b0b17a",
-                "reference": "f3d45b92d4187ea5eb37f82c1a0dce23c9b0b17a",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/contracts": "^6.9|^7.0",
-                "illuminate/database": "^6.9|^7.0",
-                "illuminate/support": "^6.9|^7.0",
-                "php": "^7.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^4.0|^5.0",
-                "phpunit/phpunit": "^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Sanctum\\SanctumServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Sanctum\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
-            "keywords": [
-                "auth",
-                "laravel",
-                "sanctum"
-            ],
-            "time": "2020-03-24T16:01:07+00:00"
-        },
-        {
             "name": "laravel/tinker",
             "version": "v2.3.0",
             "source": {
@@ -1170,61 +998,6 @@
                 "psysh"
             ],
             "time": "2020-03-17T15:34:59+00:00"
-        },
-        {
-            "name": "laravel/ui",
-            "version": "v2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/ui.git",
-                "reference": "47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83",
-                "reference": "47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^7.0",
-                "illuminate/filesystem": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Ui\\UiServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Ui\\": "src/",
-                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Laravel UI utilities and presets.",
-            "keywords": [
-                "laravel",
-                "ui"
-            ],
-            "time": "2020-03-03T20:16:46+00:00"
         },
         {
             "name": "league/commonmark",
@@ -1617,116 +1390,6 @@
                 "php"
             ],
             "time": "2019-11-08T13:50:10+00:00"
-        },
-        {
-            "name": "nuwave/lighthouse",
-            "version": "4.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "7d7941fff14e9ff21c2bca6cd6f4f0c951b67cd6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/7d7941fff14e9ff21c2bca6cd6f4f0c951b67cd6",
-                "reference": "7d7941fff14e9ff21c2bca6cd6f4f0c951b67cd6",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/contracts": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
-                "illuminate/http": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
-                "illuminate/pagination": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
-                "illuminate/routing": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
-                "illuminate/support": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
-                "illuminate/validation": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
-                "php": ">= 7.1",
-                "webonyx/graphql-php": "^0.13.2"
-            },
-            "require-dev": {
-                "bensampo/laravel-enum": "^1.28.3",
-                "ergebnis/composer-normalize": "^2.2.2",
-                "haydenpierce/class-finder": "^0.4",
-                "laravel/framework": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
-                "laravel/lumen-framework": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
-                "laravel/scout": "^4.0 || ^5.0 || ^6.0 || ^7.0",
-                "mll-lab/graphql-php-scalars": "^2.1",
-                "mockery/mockery": "^1.0",
-                "nunomaduro/larastan": "^0.4.3 || ^0.5.2",
-                "orchestra/database": "3.5.* || 3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4.0 || ^5.0",
-                "orchestra/testbench": "3.5.* || 3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4.0 || ^5.0",
-                "phpbench/phpbench": "@dev",
-                "phpunit/phpunit": "^6.5 || ^7.5 || ^8.4",
-                "pusher/pusher-php-server": "^3.2"
-            },
-            "suggest": {
-                "bensampo/laravel-enum": "Convenient enum definitions that can easily be registered in your Schema",
-                "haydenpierce/class-finder": "Required for the artisan command lighthouse:validate-schema",
-                "laravel/scout": "Required for the @search directive",
-                "mll-lab/graphql-php-scalars": "Useful scalar types, required for @whereConditions",
-                "mll-lab/laravel-graphql-playground": "GraphQL IDE for better development workflow - integrated with Laravel"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Nuwave\\Lighthouse\\LighthouseServiceProvider",
-                        "Nuwave\\Lighthouse\\SoftDeletes\\SoftDeletesServiceProvider",
-                        "Nuwave\\Lighthouse\\OrderBy\\OrderByServiceProvider"
-                    ],
-                    "aliases": {
-                        "graphql": "Nuwave\\Lighthouse\\GraphQL"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Nuwave\\Lighthouse\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christopher Moore",
-                    "email": "chris@nuwavecommerce.com",
-                    "homepage": "https://www.nuwavecommerce.com"
-                },
-                {
-                    "name": "Benedikt Franke",
-                    "email": "benedikt@franke.tech",
-                    "homepage": "https://franke.tech"
-                }
-            ],
-            "description": "Lighthouse is a schema first GraphQL package for Laravel applications.",
-            "homepage": "https://lighthouse-php.com",
-            "keywords": [
-                "api",
-                "graphql",
-                "laravel",
-                "laravel-graphql"
-            ],
-            "funding": [
-                {
-                    "url": "https://github.com/spawnia",
-                    "type": "github"
-                },
-                {
-                    "url": "https://issuehunt.io/r/nuwave/lighthouse",
-                    "type": "issuehunt"
-                },
-                {
-                    "url": "https://www.patreon.com/lighthouse_php",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/nuwave/lighthouse",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-03-25T10:54:59+00:00"
         },
         {
             "name": "opis/closure",
@@ -3977,56 +3640,6 @@
             "time": "2020-03-27T16:56:45+00:00"
         },
         {
-            "name": "tightenco/collect",
-            "version": "v7.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tightenco/collect.git",
-                "reference": "5024db45b1ec1956e6d5959cbb5cdf5f00f26f56"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/5024db45b1ec1956e6d5959cbb5cdf5f00f26f56",
-                "reference": "5024db45b1ec1956e6d5959cbb5cdf5f00f26f56",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "nesbot/carbon": "^2.23.0",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Collect/Support/helpers.php",
-                    "src/Collect/Support/alias.php"
-                ],
-                "psr-4": {
-                    "Tightenco\\Collect\\": "src/Collect"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "description": "Collect - Illuminate Collections as a separate package.",
-            "keywords": [
-                "collection",
-                "laravel"
-            ],
-            "time": "2020-03-31T17:56:15+00:00"
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.2",
             "source": {
@@ -4211,58 +3824,6 @@
                 }
             ],
             "time": "2020-03-13T01:23:26+00:00"
-        },
-        {
-            "name": "webonyx/graphql-php",
-            "version": "v0.13.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "6829ae58f4c59121df1f86915fb9917a2ec595e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/6829ae58f4c59121df1f86915fb9917a2ec595e8",
-                "reference": "6829ae58f4c59121df1f86915fb9917a2ec595e8",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "php": "^7.1||^8.0"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "^6.0",
-                "phpbench/phpbench": "^0.14.0",
-                "phpstan/phpstan": "^0.11.4",
-                "phpstan/phpstan-phpunit": "^0.11.0",
-                "phpstan/phpstan-strict-rules": "^0.11.0",
-                "phpunit/phpcov": "^5.0",
-                "phpunit/phpunit": "^7.2",
-                "psr/http-message": "^1.0",
-                "react/promise": "2.*"
-            },
-            "suggest": {
-                "psr/http-message": "To use standard GraphQL server",
-                "react/promise": "To leverage async resolving on React PHP platform"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "GraphQL\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A PHP port of GraphQL reference implementation",
-            "homepage": "https://github.com/webonyx/graphql-php",
-            "keywords": [
-                "api",
-                "graphql"
-            ],
-            "time": "2019-08-25T10:32:47+00:00"
         }
     ],
     "packages-dev": [

@@ -31,19 +31,19 @@ return [
     | users are actually retrieved out of your database or other storage
     | mechanisms used by this application to persist your user's data.
     |
-    | Supported: "session", "token",
+    | Supported: "session", "token"
     |
     */
 
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'ldap',
+            'provider' => 'users',
         ],
 
         'api' => [
             'driver' => 'token',
-            'provider' => 'ldap',
+            'provider' => 'users',
             'hash' => false,
         ],
     ],
@@ -71,18 +71,10 @@ return [
             'model' => App\User::class,
         ],
 
-        'ldap' => [
-            'driver' => 'ldap',
-            'model' => LdapRecord\Models\OpenLDAP\User::class,
-            'database' => [
-                'model' => App\User::class,
-                'sync_passwords' => false,
-                'sync_attributes' => [
-                    'name' => 'cn',
-                    'email' => 'mail',
-                ],
-            ],
-        ],
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
     ],
 
     /*
